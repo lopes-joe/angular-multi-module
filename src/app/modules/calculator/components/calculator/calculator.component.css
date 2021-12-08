@@ -1,0 +1,59 @@
+.kz-btn {
+    width: 90%;
+    margin: 4px;
+}
+.kz-input-text {
+    margin-top: 3px;
+    width:96%;
+	margin-left:6px
+}
+.kz-pad-20 {
+    display: flex;
+    flex-direction: column;
+	padding: 20px;
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    background-color: rgb(25, 49, 99);
+}
+.col-xs-3, .col-xs-9 {
+	padding: 0px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+button {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px!important;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.903);
+    border : none;
+}
+input {
+    font-size: 56px;
+    margin-bottom: 24px;
+    background-color: rgba(255, 255, 255, 0.10)!important;
+    padding: 32px 12px;
+    border: none;
+    color: white;
+    
+}
+
+.btn-warning{
+    background-color: rgb(46, 170, 156);
+}
+
+.btn-danger {
+    background-color: rgb(192, 88, 40);
+}
+
+.btn-warning:hover, .btn-warning.focus, .btn-warning:focus {
+    color: #fff;
+    background-color: rgb(21, 124, 112);
+    border-color: rgb(46, 170, 156);
+}

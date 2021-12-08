@@ -1,0 +1,52 @@
+<div
+  class="modal fade"
+  [id]="id"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="modalLabel"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Fechar"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="modalLabel">Cotação em {{ priceDate | dateBr}}</h4>
+      </div>
+      <div class="modal-body text-center">
+        <div>
+          <h2>
+            {{ conversion.amount }}
+            {{ conversion.currencyFrom }}
+            =
+            {{ convertedAmount }}
+            {{ conversion.currencyTo }}
+          </h2>
+          <p>1 {{ conversion.currencyFrom }} = 
+            {{ priceTo }} {{ conversion.currencyTo }}
+            / 
+            1 {{ conversion.currencyTo }} =
+            {{ priceFrom }} {{ conversion.currencyTo }}
+            </p>
+            <p>{{ conversion | json }}</p>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button 
+          type="button" 
+          class="btn btn-success" 
+          data-dismiss="modal"
+          (click)="newSearch()"
+        >
+          Nova consulta
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
